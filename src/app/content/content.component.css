@@ -68,3 +68,24 @@ b {
     font-size: 12px;
     line-height: 1.42857;
 }
+button {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    user-select: none;
+}
+button:hover {
+    color: rgb(0,59,66);
+    cursor: pointer;
+}
+button:active {
+    padding-bottom: 1px;
+}

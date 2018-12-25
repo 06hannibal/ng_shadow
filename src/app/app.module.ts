@@ -9,7 +9,10 @@ import { ContentComponent } from './content/content.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule, MatInputModule, MatIconModule } from '@angular/material';
 import { ProductService } from './product.service';
+import { VariationService } from './variation.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessageService } from './messages.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +24,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     HttpClientModule,
     MatTabsModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, VariationService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
